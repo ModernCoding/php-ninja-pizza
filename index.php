@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>My first PHP file</title>
-  </head>
+    
+    <?php
+      include('./templates/header.php');
+    ?>
 
-  <body>
-    <h1>
-      <?php
-        echo 'Hello Ninjas';
-      ?>
-    </h1>
-  </body>
+    <?php
+      include('./templates/footer.php');
+    ?>
+
 </html>
