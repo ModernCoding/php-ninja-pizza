@@ -1,5 +1,14 @@
-<?php
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My first PHP file</title>
+  </head>
 
-  echo 'Hello Ninjas';
-
-?>
+  <body>
+    <h1>
+      <?php
+        echo 'Hello Ninjas';
+      ?>
+    </h1>
+  </body>
+</html>
