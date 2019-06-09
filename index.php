@@ -1,15 +1,15 @@
 <?php
 
-  //  connect to DB
-  $conn = mysqli_connect("localhost", "root", "Per180h+", "ninja_pizza");
-
-  //  check the connection
-  if (!$conn) {
-    echo "Connection error: " . mysqli_connect_error();
-  }
+  include('config/db_connect.php');
 
   // write query for all pizzas
-  $sql = 'SELECT title, ingredients, id FROM pizzas ORDER BY created_at';
+  $sql = '
+      SELECT  title
+            , ingredients
+            , id 
+        FROM  pizzas 
+        ORDER BY created_at
+    ';
   
   // get the result set (set of rows)
   $result = mysqli_query($conn, $sql);
